@@ -57,8 +57,46 @@ if ($query->have_posts()) :
         
 		$events = get_field('events', get_the_ID());
 
-		if ( !empty($events)){
 
+		$hero 			         = get_field('hero', get_the_ID());
+		$title_hero 		     = $hero['title'];
+		?><h1><?php echo $title_hero ?></h1> <?php 
+		$text_hero 		         = $hero['text'];
+		$background_image_hero 	 = $hero['background_image'];
+
+		$transformacao_do_espaco = get_field('transformacao_do_espaco');
+		$title_espaco 			 = $transformacao_do_espaco['title'];
+		$text_espaco 			 = $transformacao_do_espaco['text'];
+		$gif_espaco     		 = $transformacao_do_espaco['gif'];
+
+
+		$antes_e_depois 	     = get_field('antes_e_depois');
+		$text_aed 				 = $antes_e_depois['text'];
+		$author_aed 			 = $antes_e_depois['author'];
+
+		$explore_o_passado 		 = get_field('explore_o_passado');
+		$title_eop  			 = $explore_o_passado['title'];
+		$text_eop 				 = $explore_o_passado['text'];
+		$cta_eop 				 = $explore_o_passado['cta'];
+		$card_eop 				 = $explore_o_passado['card'];
+		$image_card_eop 		 = $card_eop['image'];
+		$year_eop 				 = $card_eop['year'];
+		$text_eop 				 = $card_eop['text'];
+		$text_button_eop 		 = $card_eop['text_button'];
+
+		$footer 				 = get_field('footer');
+		$image_footer 			 = $footer['image'];
+		$text_author_footer 	 = $footer['text_author'];
+		$tile_footer 			 = $text_author_footer['title'];
+		$text_footer 			 = $text_author_footer['text'];
+
+		?>
+		<h1>
+			<?php echo $title?> 
+		</h1>
+		<?php
+
+		if ( !empty($events)){
 			foreach ($events as $key => $event) {
 
 				if(!empty($event['mes'])){ ?>

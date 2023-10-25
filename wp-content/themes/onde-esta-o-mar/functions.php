@@ -157,39 +157,39 @@ function admin_reset_stylesheet() {?>
 
 
 // Register Custom Post Type
-function eventos_cpt() {
+function siteContent_cpt() {
     $labels = array(
-        'name' => _x( 'Eventos', 'Post Type General Name', 'onde_esta_o_mar' ),
-        'singular_name' => _x( 'O evento', 'Post Type Singular Name', 'onde_esta_o_mar' ),
-        'menu_name' => __( 'Eventos', 'onde_esta_o_mar' ),
-        'name_admin_bar' => __( 'Eventos', 'onde_esta_o_mar' ),
-        'archives' => __( 'Arquivos de O evento', 'onde_esta_o_mar' ),
-        'attributes' => __( 'Atributos de O evento', 'onde_esta_o_mar' ),
-        'parent_item_colon' => __( 'O evento Pai:', 'onde_esta_o_mar' ),
-        'all_items' => __( 'Todas as Eventos', 'onde_esta_o_mar' ),
-        'add_new_item' => __( 'Adicionar nova O evento', 'onde_esta_o_mar' ),
+        'name' => _x( 'siteContent', 'Post Type General Name', 'onde_esta_o_mar' ),
+        'singular_name' => _x( 'Site content', 'Post Type Singular Name', 'onde_esta_o_mar' ),
+        'menu_name' => __( 'Site Content', 'onde_esta_o_mar' ),
+        'name_admin_bar' => __( 'Site Content', 'onde_esta_o_mar' ),
+        'archives' => __( 'Arquivos de Site content', 'onde_esta_o_mar' ),
+        'attributes' => __( 'Atributos de Site content', 'onde_esta_o_mar' ),
+        'parent_item_colon' => __( 'Site content Pai:', 'onde_esta_o_mar' ),
+        'all_items' => __( 'Todo o site', 'onde_esta_o_mar' ),
+        'add_new_item' => __( 'Adicionar Site content', 'onde_esta_o_mar' ),
         'add_new' => __( 'Adicionar nova', 'onde_esta_o_mar' ),
-        'new_item' => __( 'Nova O evento', 'onde_esta_o_mar' ),
-        'edit_item' => __( 'Editar O evento', 'onde_esta_o_mar' ),
-        'update_item' => __( 'Atualizar O evento', 'onde_esta_o_mar' ),
-        'view_item' => __( 'Ver O evento', 'onde_esta_o_mar' ),
-        'view_items' => __( 'Ver Eventos', 'onde_esta_o_mar' ),
-        'search_items' => __( 'Buscar Eventos', 'onde_esta_o_mar' ),
-        'not_found' => __( 'O evento não encontrada', 'onde_esta_o_mar' ),
-        'not_found_in_trash' => __( 'O evento não encontrada na lixeira', 'onde_esta_o_mar' ),
+        'new_item' => __( 'Nova Site content', 'onde_esta_o_mar' ),
+        'edit_item' => __( 'Editar Site content', 'onde_esta_o_mar' ),
+        'update_item' => __( 'Atualizar Site content', 'onde_esta_o_mar' ),
+        'view_item' => __( 'Ver Site content', 'onde_esta_o_mar' ),
+        'view_items' => __( 'Ver Site Content', 'onde_esta_o_mar' ),
+        'search_items' => __( 'Buscar Site Content', 'onde_esta_o_mar' ),
+        'not_found' => __( 'Site content não encontrada', 'onde_esta_o_mar' ),
+        'not_found_in_trash' => __( 'Site content não encontrada na lixeira', 'onde_esta_o_mar' ),
         'featured_image' => __( 'Imagem em destaque', 'onde_esta_o_mar' ),
         'set_featured_image' => __( 'Setando imagem em destaque', 'onde_esta_o_mar' ),
         'remove_featured_image' => __( 'Remover imagem em destaque', 'onde_esta_o_mar' ),
         'use_featured_image' => __( 'Use como imagem em destaque', 'onde_esta_o_mar' ),
-        'insert_into_item' => __( 'Inserir na O evento', 'onde_esta_o_mar' ),
-        'uploaded_to_this_item' => __( 'Carregado para esta O evento', 'onde_esta_o_mar' ),
-        'items_list' => __( 'Lista de Eventos', 'onde_esta_o_mar' ),
-        'items_list_navigation' => __( 'Navegação na lista de Eventos', 'onde_esta_o_mar' ),
-        'filter_items_list' => __( 'Filtrar lista de Eventos', 'onde_esta_o_mar' ),
+        'insert_into_item' => __( 'Inserir na Site content', 'onde_esta_o_mar' ),
+        'uploaded_to_this_item' => __( 'Carregado para esta Site content', 'onde_esta_o_mar' ),
+        'items_list' => __( 'Lista do Site Content', 'onde_esta_o_mar' ),
+        'items_list_navigation' => __( 'Navegação na lista de Site Content', 'onde_esta_o_mar' ),
+        'filter_items_list' => __( 'Filtrar lista de Site Content', 'onde_esta_o_mar' ),
     );
     $args = array(
-        'label' => __( 'O evento', 'onde_esta_o_mar' ),
-        'description' => __( 'O evento', 'onde_esta_o_mar' ),
+        'label' => __( 'Site content', 'onde_esta_o_mar' ),
+        'description' => __( 'Site content', 'onde_esta_o_mar' ),
         'labels' => $labels,
         'taxonomies' => array(),
         'hierarchical' => true,
@@ -215,13 +215,13 @@ function eventos_cpt() {
         'menu_icon' => 'dashicons-admin-site-alt3',
     );
 
-    register_post_type( 'eventos', $args );
+    register_post_type( 'siteContent', $args );
     
     
     // CATEGORY
     register_taxonomy(
-        'eventos_category',
-        'eventos',
+        'siteContent_category',
+        'siteContent',
         array(
             'labels' => array(
                 'name' => _x( 'Categorias', 'Taxonomy General Name', 'onde_esta_o_mar' ),
@@ -270,8 +270,8 @@ function eventos_cpt() {
     
     // TAG
     register_taxonomy(
-        'eventos_tag',
-        'eventos',
+        'siteContent_tag',
+        'siteContent',
         array(
             'labels' => array(
                 'name' => _x( 'Tags', 'Taxonomy General Name', 'onde_esta_o_mar' ),
@@ -317,5 +317,10 @@ function eventos_cpt() {
         )
     );
 }  
-add_action( 'init', 'eventos_cpt', 0 );
+add_action( 'init', 'siteContent_cpt', 0 );
     
+function enqueue_styles() {
+    wp_enqueue_style('main-style', get_stylesheet_uri());
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_styles');
