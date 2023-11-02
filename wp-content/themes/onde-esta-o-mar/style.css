@@ -1,138 +1,149 @@
-/**
- * Theme Name: Onde esta o Mar
- * Theme URI: https://github.com/gabrielpenido/calendario-cbvela
- * Author: Gabriel Penido
- * Author URI: https://www.linkedin.com/in/gabriel-penido-60599b179/
- * Version: 1.0.0
- * License: GNU General Public License v2 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: onde_esta_o_mar
- */
-
- body {
-    display: flex;
-    justify-content: center;
-}
-main#site-content {
-    max-width: 1300px;
-    display: flex;
-    flex-direction: column;
-}
-.cabecalho-body {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-.form-onde_esta_o_mar a{
-    color: #1F3485;
-    font-family: "Roboto", Sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-}
-h3.form-onde_esta_o_mar {
-    margin-bottom: 0;
-}
-.title-regatas{
-    color: #1F3485;
-    font-family: "Roboto", Sans-serif;
-    font-size: 26px;
-    font-weight: 600;
-    text-align: center;
-}
-h1.title-regatas {
-    margin-bottom: 0;
-}
-.evento-title {
-    background-color: rgb(216, 145, 43);
-    color: #2C3D73;
-    font-family: "Roboto", Sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    text-align: center;
-    
-}
-.mes {
-    background-color: rgb(25, 96, 54);
-    color: #FFFFFF;
-    font-family: "Roboto", Sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-transform: uppercase;
-    padding-left: 15px;
-}
-.informacao {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 10px;
-}
-.data{
-    font-size: 14px;
-    color: #2C3D73;
-    width: 100px;
-    height: 45px;
-    text-align: center;
-    background-color: #E6EDF4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", Sans-serif;
-}
-.modalidade{
-    font-size: 14px;
-    color: #2C3D73;
-    width: 1130px;
-    height: 45px;
-    text-align: center;
-    background-color: #E6EDF4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-family: "Roboto", Sans-serif;
-}
-.local{
-    font-size: 14px;
-    color: #2C3D73;
-    width: 100px;
-    height: 45px;
-    text-align: center;
-    background-color: #E6EDF4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", Sans-serif;
-}
-.local-p {
-    word-wrap: break-word;
-    width: 100px;
+:root {
+    --gradiente-radial: radial-gradient(231.91% 386.07% at 284.21% 199.77%, #010000 0%, rgba(31, 9, 9, 0.00) 100%);
 }
 
-@media (max-width: 800px){
-    body{
-        margin: 15px;
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .menu-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    border-radius: 23.125px;
+    border: 1.25px solid #412929;
+    background: var(--gradiente-radial);
+    box-shadow: 0px 5px 5px 0px rgba(66, 42, 42, 0.50);
+    backdrop-filter: blur(12px);
+
+    .space-transforming {
+        padding-left: 5%;
+        padding-right: 5%;
     }
-    main#site-content{
-        max-width: 100%;
+
+    .link-menu {
+        color: #F0EFEA;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.3px;
+        text-transform: uppercase;
+        cursor: pointer;
     }
-    .modalidade {
-        width: 160px;
-        height: 122px;
+}
+
+
+    .link-menu:hover {
+        color: #FF9AB8;
     }
-    .data {
-        width: 100px;
-        height: 122px;
+}
+
+.Hero {
+    background-image: url('../../uploads/2023/11/Desktop-1-1440-x-1024-Dev-Imagem.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    .section-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        .h2-section-hero{
+            color: #F0EFEA;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: Cinzel;
+            font-size: 88px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 69.5px; /* 78.977% */
+            letter-spacing: 27.28px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .p-sectionHero{
+            color: #F0EFEA;
+            text-align: center;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px; /* 168.75% */
+            letter-spacing: 0.8px;
+        }
     }
-    .local{
-        width: 100px;
-        height: 122px;
+}
+
+.section-espaco {
+    background-image: url('../../uploads/2023/11/Desktop-1-1440-x-1024-Dev-Imagem-1.png');
+    background-size: cover;
+    height: 100vh;
+    .section-transform {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10%;
+        padding-left: 10%;
+        max-width: 50%;
+        .h2-section-espaco {
+            color: #412929;
+            font-family: Cinzel;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 49.111px; /* 204.628% */
+            letter-spacing: 7.44px;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #412929;
+            position: relative;
+            max-width: 50%;
+        }
+        .h2-section-espaco::before,
+        .h2-section-espaco::after {
+            content: "";
+            position: absolute;
+            width: 10px; /* Largura do losango */
+            height: 10px; /* Altura do losango */
+            background-color: #412929;
+            transform: rotate(45deg); /* Rotação de 45 graus para criar o losango */
+            bottom: -6px; /* Posição em relação à borda inferior do link */
+        }
+        .h2-section-espaco::before {
+            left: -10px;
+        }
+        .h2-section-espaco::after {
+            right: -10px; /* Posição no final da borda sublinhada */
+          }
     }
+}
+
+.section-beforeAfter {
+    background-image: url('../../uploads/2023/11/Desktop-1-1440-x-1024-Dev-Imagem-2.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-end {
+    background-image: url('../../uploads/2023/11/Desktop-1-1440-x-1024-Dev-Imagem-3.png');
+    background-size: cover;
+    height: 100vh;
 }

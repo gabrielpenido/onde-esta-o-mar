@@ -19,136 +19,39 @@ get_header();
 
 <main id="site-content">
 
-<?php
-// O seguinte código vai no seu arquivo index.php
-
-// Defina os parâmetros da consulta para o tipo de postagem personalizado
-$args = array(
-    'post_type' => 'eventos',
-    'posts_per_page' => -1, // Altere o número de postagens exibidas conforme necessário
-);
-
-// Execute a consulta
-$query = new WP_Query($args);
-?>
-<div class="cabecalho-body">
-	<img style="width: 399px; height: 113px;" src="https://calendario.onde_esta_o_mar.org.br/wp-content/uploads/2022/12/Logo-onde_esta_o_mar-T4_1-1-768x219.png" alt="Logo onde_esta_o_mar">
-	<h1 class="title-regatas">
-		Onde esta o mar?
-	</h1>
-	<h3 class="form-onde_esta_o_mar">
-		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSm61BMf95KqE2pJ6SbngRIdgG2_5QsL8j_SlePZgME7bZXw/viewform">
-			UFRJ
-		</a>
-	</h3>
+<div class="Hero">
+	<div class="section-hero">
+		<h2 class="h2-section-hero">Onde está o mar?</h2>
+		<p class=p-sectionHero>Ao olhar essa imagem, essa pergunta se torna intrigante. Mas você sabia que essa mesma paisagem já foi uma praia? 
+			Então para descobrir, convidamos você para embarcar em uma viagem no tempo, do paraíso até o concreto.
+		</p>
+	</div>
 </div>
-<?php
+<div class="section-espaco">
+	<div class="section-transform">
+		<h2 class="h2-section-espaco">
+			Transformação do Espaço
+		</h2>
+		<div class="content-section-espaco">
+			<div class="text-section-espaco">
+				<p>
+				Iniciamos a nossa jornada na história, em 1519, onde um navegador chamado Fernão de Magalhães ergueu uma pequena capela para se casar com uma indígena, chamada de Luzia. E então ela foi usada e criada para afirmar essa história de amor. Mas além disso, recebeu a imagem da Nossa Senhora dos Navegantes.<br><br>
+				Já em 1751, dois proprietários de uma chácara cedem um terreno para a construção de uma pequena igreja à beira mar e a frente do Morro do Castelo, dando espaço para a Irmandade de Santa Luzia.<br><br>
+				E com um tempo, a paisagem foi sendo transformada para se adaptar a uma determinada evolução, que previa o desmonte do Morro do Castelo, que possuía habitações e a criação de um aterro que dava fim a uma linda praia. Porém permanecendo a Igreja de Santa Luzia e a Santa Casa da Misericórdia. Com isso, a partir de 1924, tal igreja jamais terá a mesma vista que um dia já possuiu
+				</p>
+			</div>
+			<div class="gif-section-espaco">
 
+			</div>
+		</div>
+	</div>
+	<div class="section-compare">
 
-// Verifique se há postagens
-if ($query->have_posts()) :
-    while ($query->have_posts()) : $query->the_post();
-        // Aqui você pode exibir o conteúdo de cada postagem
-        ?>
-		<div class="evento-title">
-			<?php the_title(); // Título da postagem ?>
-		</div><?php
-		
-        
-		$events = get_field('events', get_the_ID());
+	</div>
 
-
-		$hero 			         = get_field('hero', get_the_ID());
-		$title_hero 		     = $hero['title'];
-		?><h1><?php echo $title_hero ?></h1> <?php 
-		$text_hero 		         = $hero['text'];
-		$background_image_hero 	 = $hero['background_image'];
-
-		$transformacao_do_espaco = get_field('transformacao_do_espaco');
-		$title_espaco 			 = $transformacao_do_espaco['title'];
-		$text_espaco 			 = $transformacao_do_espaco['text'];
-		$gif_espaco     		 = $transformacao_do_espaco['gif'];
-
-
-		$antes_e_depois 	     = get_field('antes_e_depois');
-		$text_aed 				 = $antes_e_depois['text'];
-		$author_aed 			 = $antes_e_depois['author'];
-
-		$explore_o_passado 		 = get_field('explore_o_passado');
-		$title_eop  			 = $explore_o_passado['title'];
-		$text_eop 				 = $explore_o_passado['text'];
-		$cta_eop 				 = $explore_o_passado['cta'];
-		$card_eop 				 = $explore_o_passado['card'];
-		$image_card_eop 		 = $card_eop['image'];
-		$year_eop 				 = $card_eop['year'];
-		$text_eop 				 = $card_eop['text'];
-		$text_button_eop 		 = $card_eop['text_button'];
-
-		$footer 				 = get_field('footer');
-		$image_footer 			 = $footer['image'];
-		$text_author_footer 	 = $footer['text_author'];
-		$tile_footer 			 = $text_author_footer['title'];
-		$text_footer 			 = $text_author_footer['text'];
-
-		?>
-		<h1>
-			<?php echo $title?> 
-		</h1>
-		<?php
-
-		if ( !empty($events)){
-			foreach ($events as $key => $event) {
-
-				if(!empty($event['mes'])){ ?>
-					<div class="mes">
-						<?php echo $event['mes']; ?>
-					</div><?php
-					
-				}
-
-				if (!empty($event['informacao'])){
-						foreach ($event['informacao'] as $key => $info) { ?>
-						<div class="informacao"> <?php
-								?><div class="data"> <?php
-									if(!empty($info['data'])){?>
-										
-											<?php echo $info['data']; 
-									}
-								?></div>
-
-								<div class="modalidade"><?php
-									if(!empty($info['modalidade'])){?>
-											<?php echo  $info['modalidade'];
-									}
-								?></div>
-
-								<div class="local"><?php
-									if(!empty($info['local'])){?>
-											<p class="local-p">
-											<?php echo  $info['local'];
-											?></p><?php
-									}
-								?></div><?php
-
-							?></div><?php
-						}
-				
-				}
-
-			}
-
-		}
-
-    endwhile;
-else :
-    // Caso não haja postagens
-    echo 'Não foram encontradas postagens.';
-endif;
-
-// Restaura os dados originais do post
-wp_reset_postdata();
-?>
-
+</div>
+<div class="section-beforeAfter"></div>
+<div class="section-end"></div>
 
 </main><!-- #site-content -->
 
