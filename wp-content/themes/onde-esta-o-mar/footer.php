@@ -7,8 +7,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage CbVela
- * @since CbVela 1.0
+ * @subpackage Onde esta o mar
+ * @since onde-esta-o-mar 1.0
  */
 
 ?>
@@ -18,6 +18,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-
+<script src="script.js"></script>
 	</body>
 </html>

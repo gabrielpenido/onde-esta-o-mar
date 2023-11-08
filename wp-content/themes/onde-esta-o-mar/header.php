@@ -23,6 +23,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@500&display=swap" rel="stylesheet">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
@@ -34,19 +37,23 @@
 	</head>
 
 	<header>
-		<div class="menu">
-			<div class="menu-content">
-				<div class="link-menu home">
-					<p>Home</p>
-				</div>
-				<div class="link-menu space-transforming">
-					<p>Transformação do espaço</p>
-				</div>
-				<div class="link-menu virtual-tour">
-					<p>Tour Virtual</p>
-				</div>
+	<div class="menu">
+		<div class="menu-content">
+			<div class="link-menu home">
+				<a class="link-menu" href="#hero">Home</a>
+			</div>
+			<div class="link-menu space-transforming">
+				<a class="link-menu" href="#transforming">Transformação do espaço</a>
+			</div>
+			<div class="link-menu virtual-tour">
+				<a class="link-menu" href="#tour">Tour Virtual</a>
+			</div>
+			<div class="link-menu sobre">
+				<a class="link-menu" href="#sobre">Sobre Nós</a>
 			</div>
 		</div>
+	</div>
+
 	</header>
 
 	<body <?php body_class(); ?>>
