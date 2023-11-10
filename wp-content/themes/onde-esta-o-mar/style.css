@@ -35,7 +35,7 @@ main {
     align-items: center;
     width: 100%;
     height: 60px;
-    max-width: 900px;
+    max-width: 1200px;
     height: 60px;
     border-radius: 23.125px;
     border-radius: 23.125px;
@@ -82,7 +82,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 900px;
+        max-width: 1200px;
         width: 100%;
         .h1-section-hero{
             color: #F0EFEA;
@@ -119,7 +119,130 @@ main {
 }
 
 
+.transform-espaco {
+    display: flex;
+    background-color: #D9D4CB;;
+    justify-content: center;
+    padding-top: 5%;
+}
 
+.title-transform-espaco {
+    color: #412929;
+
+    /* H2/SemiBold */
+    font-family: Cinzel;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 49.111px; /* 204.628% */
+    letter-spacing: 7.44px;
+    text-transform: uppercase;
+}
+
+.transform-espaco-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.transform-espaco-content {
+    display: flex;
+}
+
+.p-transform-text {
+    color: #412929;
+
+    /* H6/Regular */
+    font-family: Raleway;
+    font-size: 14.02px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.1px; /* 157.632% */
+    letter-spacing: 0.701px;
+}
+
+.compare-transform {
+    background-image: url('../../uploads/2023/11/Desmonte-do-morro.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #D9D4CB;;
+    align-items: flex-end;
+    padding-bottom: 5%;
+}
+
+.compare-transform-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+}
+
+.text-compare-transform {
+    background-color: black;
+    width: 541px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    margin-right: 20px;
+}
+
+.p-compare-transform {
+    color: white;
+    font-family: Raleway;
+    font-size: 14.02px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 22.1px; /* 157.632% */
+    letter-spacing: 0.701px;
+}
+
+.p-autor-compare-transform {
+    color: white;
+    font-family: Raleway;
+    font-size: 14.02px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 22.1px; /* 157.632% */
+    letter-spacing: 0.701px;
+    text-align: end;
+}
+
+.reference-compare-transform {
+    color: #FFF;
+
+/* H9/Regular */
+font-family: Raleway;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: 17.6px; /* 160% */
+letter-spacing: 0.55px;
+
+}
+
+.aspas-compare-transform {
+width: 54px;
+height: 40px;
+}
+
+.reference-mobile {
+    display: none;
+}
+
+.reference-desktop {
+    display: block;
+}
+
+.embed-compare-desktop {
+    display: block;
+}
+
+.embed-compare-mobile {
+    display: none;
+}
 
 @media (max-width: 900px) {
 
@@ -147,5 +270,70 @@ main {
         font-weight: 500!important;
         line-height: 16px!important; /* 114.286% */
         letter-spacing: 0.7px!important;
+    }
+
+    .compare-transform {
+        padding-top: 100%;
+        background-position: center;
+    }
+
+    .transform-espaco-container {
+        width: 100%;
+    }
+
+    .transform-espaco-content {
+        flex-direction: column;
+    }
+    
+    .title-transform-espaco {
+        color: #412929;
+        font-family: Cinzel;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 35px; /* 166.667% */
+        letter-spacing: 6.51px;
+        text-transform: uppercase;
+    }
+
+    .transform-gif {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-transform-gif {
+        width: 100%;
+    }
+
+    .compare-transform-container {
+        flex-direction: column;
+    }
+
+    .text-compare-transform {
+        width: auto;
+        height: 415px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .reference-desktop {
+        display: none;
+    }
+
+    .reference-mobile {
+        display: block;
+    }
+
+    .embed-compare-transform {
+        display: flex;
+        justify-content: center;
+    }
+
+    .embed-compare-desktop {
+        display: none;
+    }
+
+    .embed-compare-mobile {
+        display: block;
     }
 }

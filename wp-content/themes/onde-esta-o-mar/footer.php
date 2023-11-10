@@ -18,6 +18,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-<script src="script.js"></script>
+<script defer src="script.js"></script>
 	</body>
 </html>
