@@ -324,3 +324,9 @@ function enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_styles');
+
+
+function my_theme_scripts() {
+    wp_enqueue_script( 'my-great-script', get_template_directory_uri() . '/js/my-great-script.js', array( 'jquery' ), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );

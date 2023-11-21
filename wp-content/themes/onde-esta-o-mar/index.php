@@ -30,7 +30,7 @@ get_header();
 </div>
 
 
-<div class="transform-espaco">
+<div class="transform-espaco" id="transforming">
 	<div class="transform-espaco-container">
 		<h1 class="title-transform-espaco">
 			Transformação do espaço
@@ -43,6 +43,8 @@ get_header();
 				E com um tempo, a paisagem foi sendo transformada para se adaptar a uma determinada evolução, que previa o desmonte do Morro do Castelo, que possuía habitações e a criação de um aterro que dava fim a uma linda praia. Porém permanecendo a Igreja de Santa Luzia e a Santa Casa da Misericórdia. Com isso, a partir de 1924, tal igreja jamais terá a mesma vista que um dia já possuiu
 				</p>
 			</div>
+
+			
 			<div class="transform-gif">
 				<img class="img-transform-gif" src="/wp-content/uploads/2023/11/Gif-do-aterro_finalmente.gif" alt="">
 			</div>
@@ -51,7 +53,7 @@ get_header();
 </div>
 
 
-<div class="compare-transform">
+<div class="compare-transform" >
 	<div class="compare-transform-container">
 		<div>
 			<div class="text-compare-transform">
@@ -83,6 +85,50 @@ get_header();
 	</div>
 </div>
 
+<div class="explore" id="tour" >
+	<div class="explore-container">
+		<p class="title-explore-container">
+			Explore <br> o passado e o presente
+		</p>
+		<p class="text-explore-container">
+			E agora, você terá a oportunidade de explorar e visitar essas paisagens que existiram nessa mesma região. Inclusive, onde foi a antiga <strong>Praia de Santa Luzia</strong> até a agitada <strong>Rua de Santa Luzia</strong>, nos dias de hoje.
+		</p>
+
+		<p class="cta-explore-container">
+			Clique nos tempos abaixo e explore.
+		</p>
+
+		<div class="cards-explore-container">
+			<div class="img-card-explore" style="background-image: url('http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-1-1.png')">
+				<p class="date-card-explore">1866</p>
+				<p class="text-card-explore">
+					Inicialmente era um local litorâneo, que recebeu banhistas e navegadores, com um belo entorno montanhoso.
+				</p>
+				<div class="btn-card-explore">
+					<i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
+				</div>
+			</div>
+			<div class="img-card-explore" style="margin-left: 20px; margin-right: 20px; background-image: url('http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-2-1.png')">
+				<p class="date-card-explore">1921</p>
+				<p class="text-card-explore">
+					As mudanças começaram a surgir, como a criação da rua, o desmonte dos morros e o aterro parcial da praia.
+				</p>
+				<div class="btn-card-explore">
+					<i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
+				</div>
+			</div>
+			<div class="img-card-explore" style="background-image: url('http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-3-1.png')">
+				<p class="date-card-explore">2023</p>
+				<p class="text-card-explore"> 
+					No tempo atual, observamos uma via totalmente urbanizada, sem qualquer sombra de uma paisagem paradisíaca já vista anteriormente.
+				</p>
+				<div class="btn-card-explore">
+					<i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </main><!-- #site-content -->
 

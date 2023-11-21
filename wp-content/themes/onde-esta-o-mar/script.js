@@ -1,9 +1,8 @@
-window.addEventListener('load', function() {
-    // Espera até que a página esteja completamente carregada
-    let meuEmbed = document.getElementById('juxtapose-embed');
-    console.log('está carregando o js');
-    if (meuEmbed) {
-        // Modifica o estilo do embed
-        meuEmbed.style.backgroundColor = 'red';
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdown-content");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
     }
-});
+}
