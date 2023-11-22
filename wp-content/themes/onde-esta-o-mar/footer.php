@@ -128,6 +128,24 @@
 
 <script>
 
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
 
 function toggleDropdown() {
     var dropdownContent = document.getElementById("dropdown-content");
@@ -139,42 +157,51 @@ function toggleDropdown() {
 }
 
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const imagens = document.querySelectorAll('.img-card-explore');
 
-    // Lista de caminhos das novas imagens (uma para cada imagem original)
-    const novasImagens = [
-        'http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-1.png',
-        'http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-2.png',
-        'http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-3.png'
-    ];
+    imagens.forEach(function(imagem) {
+        const arrowIcon = imagem.querySelector('i.fa-arrow-up');
 
-    // Lista de caminhos das imagens originais
-    const imagensOriginais = Array.from(imagens).map(imagem => imagem.src);
+        imagem.addEventListener('mouseover', function(event) {
+            const currentImage = event.currentTarget;
+            const newImageSrc = currentImage.getAttribute('data-new-image');
 
-    // Adicionar evento para cada imagem
-    imagens.forEach(function(imagem, index) {
-        // Salvar o tamanho original da imagem
-        const tamanhoOriginal = imagem.getBoundingClientRect();
+            currentImage.src = newImageSrc;
+            currentImage.style.transition = 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out';
+            currentImage.style.transform = `scale(1.1)`;
+            currentImage.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.3)';
 
-        // Adicionar evento quando passar o mouse sobre a imagem
-        imagem.addEventListener('mouseover', function() {
-            imagem.src = novasImagens[index]; // Trocar para a nova imagem associada
-            imagem.style.transition = 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out'; // Transições suaves
-            imagem.style.transform = `scale(1.1)`; // Aumentar a imagem quando o mouse passar sobre ela
-            imagem.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.3)'; // Adicionar sombra na imagem
+            if (arrowIcon) {
+                arrowIcon.classList.remove('fa-arrow-up');
+                arrowIcon.classList.add('fa-arrow-right');
+            }
         });
 
-        // Adicionar evento quando o mouse sair da imagem
-        imagem.addEventListener('mouseout', function() {
-            imagem.src = imagensOriginais[index]; // Retornar para a imagem original
-            imagem.style.transition = 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out'; // Transições suaves
-            imagem.style.transform = 'scale(1)'; // Redefinir o tamanho da imagem quando o mouse sair dela
-            imagem.style.boxShadow = 'none'; // Remover a sombra da imagem
+        imagem.addEventListener('mouseout', function(event) {
+            const currentImage = event.currentTarget;
+            const originalImageSrc = currentImage.getAttribute('data-original-image');
+
+            currentImage.src = originalImageSrc;
+            currentImage.style.transition = 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out';
+            currentImage.style.transform = 'scale(1)';
+            currentImage.style.boxShadow = 'none';
+
+            if (arrowIcon) {
+                arrowIcon.classList.remove('fa-arrow-right');
+                arrowIcon.classList.add('fa-arrow-up');
+            }
         });
     });
 });
+
+
+
+
+
+
+
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
