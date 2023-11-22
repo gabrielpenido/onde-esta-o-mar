@@ -60,6 +60,33 @@
 			</div>
 		</div>
 	</div>
+	
+	<div class="menu-mobile">
+
+		<!-- Ícone do menu hamburguer -->
+		<div class="hamburger-menu">
+			<img class="hamburger-image" src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Cabecalho.png" alt="Menu">
+		</div>
+
+		<!-- Menu de navegação do hamburguer -->
+		<div class="hamburger-nav">
+			<div class="hamburger-menu-content">
+				<div class="hamburger-link home">
+				<a class="hamburger-link" href="#hero">Home</a>
+				</div>
+				<div class="hamburger-link space-transforming">
+				<a class="hamburger-link" href="#transforming">Transformação do espaço</a>
+				</div>
+				<div class="hamburger-link virtual-tour">
+				<a class="hamburger-link" href="#tour">Tour Virtual</a>
+				</div>
+				<div class="hamburger-link sobre">
+				<a class="hamburger-link" href="#sobre">Sobre Nós</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 	</header>
 

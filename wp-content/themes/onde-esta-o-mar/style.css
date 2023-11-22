@@ -534,52 +534,162 @@ footer {
 }
 
 .modal {
+    display: none;
     position: fixed;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
-    position: relative;
+    position: absolute;
     top: 50%;
-    left: 160%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 1rem 1.5rem;
-    width: 1440px;
-    border-radius: 0.5rem;
-    z-index: 99999;
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 5px;
+    width: 95%;
 }
 
-.close-button {
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
+/* Modifique o estilo do botão de fechar */
+.close {
+    color: black; /* Cor do botão de fechar */
+    position: absolute;
+    top: 0px; /* Ajuste a posição do topo conforme necessário */
+    right: 10px; /* Ajuste a posição da direita conforme necessário */
+    font-size: 24px; /* Tamanho da fonte do botão de fechar */
     cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
+    z-index: 9999; /* Certifique-se de que está acima do modal */
 }
 
-.close-button:hover {
-    background-color: darkgray;
+/* Adicione um pouco de estilo ao botão de fechar ao passar o mouse por cima */
+.close:hover {
+    color: rgb(78, 77, 77); /* Altere a cor quando o mouse passar por cima */
 }
 
-.show-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+.accordion-desktop {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
 }
+
+.accordion-header {
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+.accordion-mobile{
+    margin-bottom: 10px;
+    display: none;
+    width: 100%;
+}
+
+.accordion {
+    display: none;
+}
+
+.autor-desktop {
+    display: block;
+}
+
+.container-autor {
+    display: grid; 
+    grid-template-columns: 33% 33% 33%; 
+    justify-content: center; 
+    justify-items: center;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .hamburger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+  }
+  
+  /* Estilos para o menu de navegação do hamburguer (inicialmente escondido) */
+  .hamburger-nav {
+    display: none;
+    position: fixed;
+    top: 70px; /* Altura para mostrar abaixo do ícone */
+    right: 0;
+    width: 250px;
+    background-color: transparent;
+    z-index: 999;
+  }
+  
+  .hamburger-menu-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 23.125px;
+    background: #3C3333;
+    box-shadow: 0px 5px 5px 0px rgba(66, 42, 42, 0.50);
+    text-align: center;
+    height: 160px;
+    justify-content: space-between;
+  }
+
+  a.hamburger-link {
+    color: #F0EFEA;
+    text-align: center;
+    font-family: Lato;
+    font-size: 13.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.96px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 
 @media (max-width: 900px) {
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger-nav {
+        display: block;
+      }
+    
+      .hamburger-menu {
+        display: block;
+      }
 
     #hero{
         background-position: right;
@@ -781,6 +891,8 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: stretch;
+        overflow-wrap: break-word;
     }
 
     .footer-copy-container {
@@ -821,4 +933,44 @@ footer {
         width: 100%;
     }
 
+    .accordion-desktop {
+        display: none;
+    }
+
+    .accordion-mobile{
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    /* Estilos para o accordion */
+    .accordion {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    .accordion-header {
+        background-color: black;
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .accordion-content {
+        padding: 10px;
+        display: none;
+    }
+    .autor-desktop {
+        display: none;
+    }
+
+    .container-autor {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+    }
 }

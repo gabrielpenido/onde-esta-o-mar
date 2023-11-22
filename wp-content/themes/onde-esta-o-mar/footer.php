@@ -22,8 +22,9 @@
 			</div>
 
 			<div class="text-footer-container">
-				<div style="display: grid; grid-template-columns: 33% 33% 33%; justify-content: center; justify-items: center;">
-					<div style="width: 128px;">
+				<div class="container-autor">
+                    <div class="autor-desktop" style="width: 128px;">
+
 						<p class="name-footer-container">
 							jhenifer penido
 						</p>
@@ -31,22 +32,71 @@
 							Sou estudante de Arquitetura e Urbanismo, na FAU UFRJ, com muita criatividade e desejo em compartilhar o conhecimento acadêmico por meio das mídias digitais. Com isso, auxiliei no conteúdo e desenvolvimento criativo do projeto para que ele fosse interessante até o fim.
 						</p>
 					</div>
-					<div style="width: 128px;">
+
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <p class="name-footer-container">
+                                jhenifer penido
+                            </p>
+                            <img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-footer-container">
+                                Sou estudante de Arquitetura e Urbanismo, na FAU UFRJ, com muita criatividade e desejo em compartilhar o conhecimento acadêmico por meio das mídias digitais. Com isso, auxiliei no conteúdo e desenvolvimento criativo do projeto para que ele fosse interessante até o fim.
+                            </p>
+                        </div>
+                    </div>
+
+					<div class="autor-desktop" style="width: 128px;">
+
 						<p class="name-footer-container">
 							Brígida bastos 
 						</p>
 						<p class="text-footer-container">
 							Sou estudante de Arquitetura e Urbanismo na FAU UFRJ, com ênfase na criação de produtos que proporcionem uma boa experiência.  Fui responsável por desenvolver o design visual e a funcionalidade do site, com o objetivo de proporcionar uma experiência de alta qualidade.
 						</p>
+
 					</div>
-					<div style="width: 128px;">
+
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <p class="name-footer-container">
+                                Brígida bastos 
+                            </p>
+                            <img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-footer-container">
+                            Sou estudante de Arquitetura e Urbanismo na FAU UFRJ, com ênfase na criação de produtos que proporcionem uma boa experiência.  Fui responsável por desenvolver o design visual e a funcionalidade do site, com o objetivo de proporcionar uma experiência de alta qualidade.
+                            </p>
+                        </div>
+                    </div>
+
+					<div class="autor-desktop" style="width: 128px;">
+
 						<p class="name-footer-container">
 							Luis victor
 						</p>
 						<p class="text-footer-container">
 							Sou estudante de Arquitetura e Urbanismo, na FAU UFRJ, Com Habilidades em modelagem e representação 3D.  Fui responsável pelo desenvolvimento dos panoramas dos tempos passados para que você pudesse ter uma experiência de imersão em uma paisagem rica em conhecimentos da história do rio, fruto de diversas colagens temporais.
 						</p>
+
 					</div>
+
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <p class="name-footer-container">
+                                Luis victor
+                            </p>
+                            <img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-footer-container">
+                                Sou estudante de Arquitetura e Urbanismo, na FAU UFRJ, Com Habilidades em modelagem e representação 3D.  Fui responsável pelo desenvolvimento dos panoramas dos tempos passados para que você pudesse ter uma experiência de imersão em uma paisagem rica em conhecimentos da história do rio, fruto de diversas colagens temporais.
+                            </p>
+                        </div>
+                    </div>
+
 				</div>
 
 			
@@ -60,6 +110,24 @@
 				<p class="footer-autor-project">
 					Projeto desenvolvido no laboratório Narrativas Visuais 2023.2, administrado pelo Laboratório de Análise Urbana e Representação Digital - Programa de Pós-Graduação em Urbanismo – Faculdade de Arquitetura e Urbanismo – Universidade Federal do Rio de Janeiro.
 				</p>
+                <div class="accordion-desktop">
+                    <div class="accordion-header">
+                        <p class="name-footer-container">
+                            Bibliografia
+                        </p>
+                        <img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text-footer-container">
+                            <strong>Textos:</strong><br>
+                                Histórias e Monumentos. Blogspot, 2014. Disponível em: https://historiasemonumentos.blogspot.com/2014/10/igrejade-santa-luzia-of-saint-luzia-1.html Acesso em: 16 de out. de 2023.<br><br>
+                                Arquitetura e entropia, uma aproximação contemporânea. Vitruvius, 2023. Disponível em: https://vitruvius.com.br/revistas/read/arquitextos/23.275/8744 Acesso em: 16 de out. de 2023.<br><br>
+                                <strong>Imagens:</strong><br>
+                                MORRO DO CASTELO. O Globo, 2015. Disponível em: https://infograficos.oglobo.globo.com/rio/castelo-360o.html Acesso em: 16 de out. de 2023.<br><br>
+                                Acervo Instituto Moreira Salles  brasiliana fotografica  Google Street View
+                        </p>
+                    </div>
+                </div>
 			</div>
 			<div class="footer-logo-fau">
 				<img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/cropped-Laurd_simples_cor-amarelo-3.png" alt="" class="footer-img-fau">
@@ -67,6 +135,24 @@
 				<img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/FAU_logotipo_CMYK_sintese-300x126-4.png" alt="" class="footer-img-fau">
 				<img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/marca-ufrj-horizontal-completa-positiva-3.png" alt="" class="footer-img-fau">
 			</div>
+            <div class="accordion-mobile">
+                    <div class="accordion-header">
+                        <p class="name-footer-container">
+                            Bibliografia
+                        </p>
+                        <img class="arrow-accordion" src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text-footer-container">
+                            <strong>Textos:</strong><br>
+                                Histórias e Monumentos. Blogspot, 2014. Disponível em: https://historiasemonumentos.blogspot.com/2014/10/igrejade-santa-luzia-of-saint-luzia-1.html Acesso em: 16 de out. de 2023.<br><br>
+                                Arquitetura e entropia, uma aproximação contemporânea. Vitruvius, 2023. Disponível em: https://vitruvius.com.br/revistas/read/arquitextos/23.275/8744 Acesso em: 16 de out. de 2023.<br><br>
+                                <strong>Imagens:</strong><br>
+                                MORRO DO CASTELO. O Globo, 2015. Disponível em: https://infograficos.oglobo.globo.com/rio/castelo-360o.html Acesso em: 16 de out. de 2023.<br><br>
+                                Acervo Instituto Moreira Salles  brasiliana fotografica  Google Street View
+                        </p>
+                    </div>
+            </div>
 		</div>
 
 		<div style="margin:0;" class="footer-underline"></div>
@@ -87,74 +173,102 @@
 
 	</div>
 
-	<!-- <div class="dropdown">
-    <button onclick="toggleDropdown()" class="dropdown-button">Jhenifer Penido</button>
-    <div id="dropdown-content" class="dropdown-content">
-        <p class="name-footer-container">Jhenifer Penido</p>
-        <p class="text-footer-container">
-            Sou estudante de Arquitetura e Urbanismo, na FAU UFRJ, com muita criatividade e desejo em compartilhar o conhecimento acadêmico por meio das mídias digitais. Com isso, auxiliei no conteúdo e desenvolvimento criativo do projeto para que ele fosse interessante até o fim.
-        </p>
-    </div>
-</div> -->
-
-<style>
-	.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px;
-    z-index: 1;
-	color: white;
-}
-
-.dropdown-button {
-    background-color: black;
-    border: none;
-    cursor: pointer;
-	color: white;
-}
-
-.dropdown-button:focus {
-    outline: none;
-}
-</style>
 
 <script>
 
-const modal = document.querySelector(".modal");
-const trigger = document.querySelector(".trigger");
-const closeButton = document.querySelector(".close-button");
 
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
+// Seleciona todos os elementos do tipo "accordion"
+const accordions = document.querySelectorAll('.accordion');
 
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
+// Adiciona evento de clique para cada accordion
+accordions.forEach(accordion => {
+    const header = accordion.querySelector('.accordion-header');
 
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+    header.addEventListener('click', () => {
+        const content = accordion.querySelector('.accordion-content');
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    });
+});
 
+// Seleciona todos os elementos do tipo "accordion-desktop"
+const accordionsDesktop = document.querySelectorAll('.accordion-desktop');
 
-function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdown-content");
-    if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
+// Adiciona evento de clique para cada accordion-desktop
+accordionsDesktop.forEach(accordion => {
+    const header = accordion.querySelector('.accordion-header');
+
+    // Adiciona um listener ao clicar no cabeçalho
+    header.addEventListener('click', (event) => {
+        // Verifica se o clique foi na imagem dentro do cabeçalho
+        if (!event.target.matches('img')) {
+            const content = accordion.querySelector('.accordion-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    });
+});
+
+// Seleciona todos os elementos do tipo "accordion-mobile"
+const accordionsMobile = document.querySelectorAll('.accordion-mobile');
+
+// Função para alternar a exibição do conteúdo do accordion
+function toggleAccordionContent(accordion) {
+    const content = accordion.querySelector('.accordion-content');
+    if (content.style.display === 'block') {
+        content.style.display = 'none';
     } else {
-        dropdownContent.style.display = "block";
+        content.style.display = 'block';
     }
 }
+
+// Adiciona evento de clique ou toque para cada accordion-mobile
+accordionsMobile.forEach(accordion => {
+    const header = accordion.querySelector('.accordion-header');
+
+    // Adiciona listeners para clique e toque no cabeçalho
+    header.addEventListener('click', () => {
+        toggleAccordionContent(accordion);
+    });
+
+    header.addEventListener('touchstart', (event) => {
+        // Impede o evento de clique após o toque (para evitar cliques subsequentes)
+        event.preventDefault();
+        toggleAccordionContent(accordion);
+    });
+});
+
+
+// Seleciona todos os botões dentro de .btn-card-explore
+const buttons = document.querySelectorAll('.btn-card-explore');
+
+// Adiciona um evento de clique para cada botão
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-modal'); // Obtém o ID do modal correspondente ao botão clicado
+        const modal = document.getElementById(modalId); // Seleciona o modal com base no ID
+
+        if (modal) {
+            modal.style.display = 'block'; // Exibe o modal correspondente
+        }
+    });
+});
+
+const closeButtons = document.querySelectorAll('.close');
+closeButtons.forEach(closeButton => {
+    closeButton.addEventListener('click', () => {
+        const modal = closeButton.closest('.modal');
+        if (modal) {
+            modal.style.display = 'none'; // Fecha o modal ao clicar no botão de fechar
+        }
+    });
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -197,6 +311,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+// Selecionar o ícone do menu hamburguer e o menu de navegação do hamburguer
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const hamburgerNav = document.querySelector('.hamburger-nav');
+
+// Esconder o menu de navegação do hamburguer inicialmente
+hamburgerNav.style.display = 'none';
+
+// Adicionar um evento de clique no ícone do menu hamburguer para alternar a exibição do menu
+hamburgerMenu.addEventListener('click', () => {
+  hamburgerNav.style.display = (hamburgerNav.style.display === 'block') ? 'none' : 'block';
+});
 
 
 
