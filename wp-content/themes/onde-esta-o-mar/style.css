@@ -84,9 +84,6 @@ main {
     height: 2px; /* Altura do sublinhado ao passar o mouse */
 }
 
-.link-menu a.pink {
-    color: #FF9AB8; /* Cor rosa para o texto */
-}
 }
 
 .Hero {
@@ -380,13 +377,15 @@ footer {
 }
 
 .name-footer-container {
-    color: #F0EFEA;
-    text-align: start;
-    font-family: Cinzel;
-    font-size: 12.968px;
+    color: #FFF;
+
+    /* H6/Medium */
+    font-family: Raleway;
+    font-size: 14.02px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 22.1px; /* 157.632% */
+    letter-spacing: 0.701px;
 }
 
 .text-footer-container {
@@ -550,9 +549,9 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fefefe;
-    padding: 30px;
+    padding: 20px;
     border-radius: 5px;
-    width: 95%;
+    width: 90%;
 }
 
 /* Modifique o estilo do botão de fechar */
@@ -925,8 +924,6 @@ footer {
 
     .explore {
         padding-bottom: 30%;
-        padding-left: 45px;
-        padding-right: 45px;
     }
 
     .footer-logo-fau {
@@ -972,5 +969,10 @@ footer {
         justify-content: center;
         justify-items: center;
         flex-direction: column;
+    }
+
+    .content-explore-mobile {
+        padding-left: 45px;
+        padding-right: 45px;
     }
 }

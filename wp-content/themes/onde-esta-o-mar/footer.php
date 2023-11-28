@@ -33,7 +33,7 @@
 						</p>
 					</div>
 
-                    <div class="accordion">
+                    <div class="accordion-mobile">
                         <div class="accordion-header">
                             <p class="name-footer-container">
                                 jhenifer penido
@@ -58,7 +58,7 @@
 
 					</div>
 
-                    <div class="accordion">
+                    <div class="accordion-mobile">
                         <div class="accordion-header">
                             <p class="name-footer-container">
                                 Brígida bastos 
@@ -83,7 +83,7 @@
 
 					</div>
 
-                    <div class="accordion">
+                    <div class="accordion-mobile">
                         <div class="accordion-header">
                             <p class="name-footer-container">
                                 Luis victor
@@ -177,34 +177,26 @@
 <script>
 
 
-// Seleciona todos os elementos do tipo "accordion"
-const accordions = document.querySelectorAll('.accordion');
-
-// Adiciona evento de clique para cada accordion
-accordions.forEach(accordion => {
-    const header = accordion.querySelector('.accordion-header');
-
-    header.addEventListener('click', () => {
-        const content = accordion.querySelector('.accordion-content');
-        if (content.style.display === 'block') {
-            content.style.display = 'none';
-        } else {
-            content.style.display = 'block';
-        }
-    });
-});
-
 // Seleciona todos os elementos do tipo "accordion-desktop"
 const accordionsDesktop = document.querySelectorAll('.accordion-desktop');
 
 // Adiciona evento de clique para cada accordion-desktop
 accordionsDesktop.forEach(accordion => {
     const header = accordion.querySelector('.accordion-header');
+    const image = header.querySelector('img');
 
     // Adiciona um listener ao clicar no cabeçalho
     header.addEventListener('click', (event) => {
         // Verifica se o clique foi na imagem dentro do cabeçalho
-        if (!event.target.matches('img')) {
+        if (event.target === image) {
+            const content = accordion.querySelector('.accordion-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        } else {
+            // Verifica se o clique foi no cabeçalho, exceto na imagem
             const content = accordion.querySelector('.accordion-content');
             if (content.style.display === 'block') {
                 content.style.display = 'none';
@@ -214,6 +206,7 @@ accordionsDesktop.forEach(accordion => {
         }
     });
 });
+
 
 // Seleciona todos os elementos do tipo "accordion-mobile"
 const accordionsMobile = document.querySelectorAll('.accordion-mobile');

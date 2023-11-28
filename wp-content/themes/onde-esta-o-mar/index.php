@@ -87,17 +87,21 @@ get_header();
 
 <div class="explore" id="tour" >
 	<div class="explore-container">
-		<p class="title-explore-container">
-			Explore <br> o passado e o presente
-		</p>
-		<p class="text-explore-container">
-			E agora, você terá a oportunidade de explorar e visitar essas paisagens que existiram nessa mesma região. Inclusive, onde foi a antiga <strong>Praia de Santa Luzia</strong> até a agitada <strong>Rua de Santa Luzia</strong>, nos dias de hoje.
-		</p>
-
-		<p class="cta-explore-container">
-			Clique nos tempos abaixo e explore.
-		</p>
-
+		<div class="content-explore-mobile">
+			<p class="title-explore-container">
+				Explore <br> o passado e o presente
+			</p>
+		</div>
+		<div class="content-explore-mobile">
+			<p class="text-explore-container">
+				E agora, você terá a oportunidade de explorar e visitar essas paisagens que existiram nessa mesma região. Inclusive, onde foi a antiga <strong>Praia de Santa Luzia</strong> até a agitada <strong>Rua de Santa Luzia</strong>, nos dias de hoje.
+			</p>
+		</div>
+		<div class="content-explore-mobile">
+			<p class="cta-explore-container">
+				Clique nos tempos abaixo e explore.
+			</p>
+		</div>
 		<div class="cards-explore-container">
 			<!-- Estrutura do card 1 -->
 			<div class="card">
