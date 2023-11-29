@@ -105,7 +105,7 @@ get_header();
 		<div class="cards-explore-container">
 			<!-- Estrutura do card 1 -->
 			<div class="card">
-				<div class="img-card-explore" style="background-image: url('http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-1-1.png')">
+				<div class="img-card-explore" style="background-image: url('/wp-content/uploads/2023/11/Card-1-1.png')">
 					<div class="content-card-explore">
 						<p class="date-card-explore">1866</p>
 						<p class="text-card-explore">
@@ -127,7 +127,7 @@ get_header();
 			</div>
 
 			<div class="card">
-				<div class="img-card-explore" style="margin-left: 20px; margin-right: 20px; background-image: url('http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-2-1.png')">
+				<div class="img-card-explore" style="margin-left: 20px; margin-right: 20px; background-image: url('/wp-content/uploads/2023/11/Card-2-1.png')">
 					<div class="content-card-explore">
 						<p class="date-card-explore">1921</p>
 						<p class="text-card-explore">
@@ -150,7 +150,7 @@ get_header();
 
 
 			<div class="card">
-				<div class="img-card-explore" style="background-image: url('http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Card-3-1.png')">
+				<div class="img-card-explore" style="background-image: url('/wp-content/uploads/2023/11/Card-3-1.png')">
 					<div class="content-card-explore">
 						<p class="date-card-explore">2023</p>
 						<p class="text-card-explore"> 

@@ -65,7 +65,7 @@
 
 		<!-- Ícone do menu hamburguer -->
 		<div class="hamburger-menu">
-			<img class="hamburger-image" src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Cabecalho.png" alt="Menu">
+			<img class="hamburger-image" src="/wp-content/uploads/2023/11/Cabecalho.png" alt="Menu">
 		</div>
 
 		<!-- Menu de navegação do hamburguer -->

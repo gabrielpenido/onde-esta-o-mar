@@ -18,7 +18,7 @@
 	<div class="footer" id="sobre">
 		<div class="footer-container">
 			<div class="img-footer-container">
-				<img class="img-block-footer" src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/20231101_114834-2-1.png" alt="">
+				<img class="img-block-footer" src="/wp-content/uploads/2023/11/20231101_114834-2-1.png" alt="">
 			</div>
 
 			<div class="text-footer-container">
@@ -26,7 +26,7 @@
                     <div class="autor-desktop" style="width: 128px;">
 
 						<p class="name-footer-container">
-							jhenifer penido
+							jhenifer Penido
 						</p>
 						<p class="text-footer-container">
 							Sou estudante de Arquitetura e Urbanismo, na FAU UFRJ, com muita criatividade e desejo em compartilhar o conhecimento acadêmico por meio das mídias digitais. Com isso, auxiliei no conteúdo e desenvolvimento criativo do projeto para que ele fosse interessante até o fim.
@@ -36,9 +36,9 @@
                     <div class="accordion-mobile">
                         <div class="accordion-header">
                             <p class="name-footer-container">
-                                jhenifer penido
+                                jhenifer Penido
                             </p>
-                            <img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                            <img src="/wp-content/uploads/2023/11/Button.png" alt="">
                         </div>
                         <div class="accordion-content">
                             <p class="text-footer-container">
@@ -50,7 +50,7 @@
 					<div class="autor-desktop" style="width: 128px;">
 
 						<p class="name-footer-container">
-							Brígida bastos 
+							Brígida Bastos 
 						</p>
 						<p class="text-footer-container">
 							Sou estudante de Arquitetura e Urbanismo na FAU UFRJ, com ênfase na criação de produtos que proporcionem uma boa experiência.  Fui responsável por desenvolver o design visual e a funcionalidade do site, com o objetivo de proporcionar uma experiência de alta qualidade.
@@ -61,9 +61,9 @@
                     <div class="accordion-mobile">
                         <div class="accordion-header">
                             <p class="name-footer-container">
-                                Brígida bastos 
+                                Brígida Bastos 
                             </p>
-                            <img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                            <img src="/wp-content/uploads/2023/11/Button.png" alt="">
                         </div>
                         <div class="accordion-content">
                             <p class="text-footer-container">
@@ -75,7 +75,7 @@
 					<div class="autor-desktop" style="width: 128px;">
 
 						<p class="name-footer-container">
-							Luis victor
+							Luis Victor
 						</p>
 						<p class="text-footer-container">
 							Sou estudante de Arquitetura e Urbanismo, na FAU UFRJ, Com Habilidades em modelagem e representação 3D.  Fui responsável pelo desenvolvimento dos panoramas dos tempos passados para que você pudesse ter uma experiência de imersão em uma paisagem rica em conhecimentos da história do rio, fruto de diversas colagens temporais.
@@ -86,9 +86,9 @@
                     <div class="accordion-mobile">
                         <div class="accordion-header">
                             <p class="name-footer-container">
-                                Luis victor
+                                Luis Victor
                             </p>
-                            <img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                            <img src="/wp-content/uploads/2023/11/Button.png" alt="">
                         </div>
                         <div class="accordion-content">
                             <p class="text-footer-container">
@@ -115,7 +115,7 @@
                         <p class="name-footer-container">
                             Bibliografia
                         </p>
-                        <img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                        <img src="/wp-content/uploads/2023/11/Button.png" alt="">
                     </div>
                     <div class="accordion-content">
                         <p class="text-footer-container">
@@ -130,17 +130,17 @@
                 </div>
 			</div>
 			<div class="footer-logo-fau">
-				<img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/cropped-Laurd_simples_cor-amarelo-3.png" alt="" class="footer-img-fau">
-				<img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/prourb-3.png" alt="" class="footer-img-fau">
-				<img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/FAU_logotipo_CMYK_sintese-300x126-4.png" alt="" class="footer-img-fau">
-				<img src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/marca-ufrj-horizontal-completa-positiva-3.png" alt="" class="footer-img-fau">
+				<img src="/wp-content/uploads/2023/11/cropped-Laurd_simples_cor-amarelo-3.png" alt="" class="footer-img-fau">
+				<img src="/wp-content/uploads/2023/11/prourb-3.png" alt="" class="footer-img-fau">
+				<img src="/wp-content/uploads/2023/11/FAU_logotipo_CMYK_sintese-300x126-4.png" alt="" class="footer-img-fau">
+				<img src="/wp-content/uploads/2023/11/marca-ufrj-horizontal-completa-positiva-3.png" alt="" class="footer-img-fau">
 			</div>
             <div class="accordion-mobile">
                     <div class="accordion-header">
                         <p class="name-footer-container">
                             Bibliografia
                         </p>
-                        <img class="arrow-accordion" src="http://onde-esta-o-mar.local/wp-content/uploads/2023/11/Button.png" alt="">
+                        <img class="arrow-accordion" src="/wp-content/uploads/2023/11/Button.png" alt="">
                     </div>
                     <div class="accordion-content">
                         <p class="text-footer-container">
