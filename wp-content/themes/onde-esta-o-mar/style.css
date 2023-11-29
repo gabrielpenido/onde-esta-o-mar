@@ -841,7 +841,6 @@ iframe {
 
     .cards-explore-container {
         overflow-y: auto;
-        overflow-x: hidden;
         justify-content: flex-start;
     }
 
