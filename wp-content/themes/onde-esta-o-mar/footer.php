@@ -26,7 +26,7 @@
                     <div class="autor-desktop" style="width: 128px;">
 
 						<p class="name-footer-container">
-							Jhenifer Penido
+							Jhenifer Barbosa
 						</p>
 						<p class="text-footer-container">
 							Sou estudante de Arquitetura e Urbanismo, na FAU UFRJ, com muita criatividade e desejo em compartilhar o conhecimento acadêmico por meio das mídias digitais. Com isso, auxiliei no conteúdo e desenvolvimento criativo do projeto para que ele fosse interessante até o fim.
